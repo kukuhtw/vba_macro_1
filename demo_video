@@ -1,0 +1,23 @@
+
+
+Di video kali ini kita akan belajar cara membuat VBA Macro di Excel untuk mengotomatiskan pencatatan KPI produksi harian dari 20 rig/sumur minyak. 
+Dengan satu klik tombol Refresh, Excel akan:
+•	🔹 Baca dan menampilkan  Data CSV
+Untuk keperluan Demo, kita gunakan data dummy. Gunakan Python untuk membuat file CSV produksi hari kemarin dengan kolom: Well, Date, Gross_Oil_bopd, Water_bopd, Gas_bopd.
+•	🔹 Menambahkan Tombol “Refresh Data”
+Di tab Developer → Insert → Button (Form Control) → beri label “Refresh Data”.
+•	🔹 Macro “RefreshData”
+1.	Baca file CSV (YYYYMMDD_WITSML.csv) dari folder raw data
+2.	Bersihkan sheet RawData, import ke tabel Excel
+3.	Hitung KPI per sumur:
+	Gross Oil (BOPD)
+	Water Cut (%) = Water_bopd / (Gross_Oil_bopd + Water_bopd) × 100
+	GOR = Gas_bopd / Gross_Oil_bopd
+4.	Pindahkan ringkasan KPI ke sheet Dashboard
+5.	Buat chart tren 30 hari (rolling average) dengan ChartObjects & SeriesCollection
+6.	Ekspor Dashboard ke PDF ke folder laporan
+•	🔹 Assign Macro ke Tombol
+Klik kanan tombol → Assign Macro → pilih RefreshData
+•	🔹 Ekspor PDF Otomatis
+Macro langsung menyimpan laporan PDF landscape dengan nama ProductionReport_YYYYMMDD.pdf
+
