@@ -12,7 +12,9 @@ c:\WellDashboard\Raw
 
 c:\WellDashboard\Reports
 
-
-put file csv di folder raw
-
+1. ambil file module1.xlsm , put di mana aja.
+2. 1. Bikin dummy data harian pake python , pake google colabs, script data_dummy.py
+3. put file csv di folder raw c:\WellDashboard\Raw
+4. jalankan vba script macro : refreshall di sheet dashboard
+ 
 
