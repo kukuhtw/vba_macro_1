@@ -1,4 +1,4 @@
-
+https://youtu.be/wOIjUB79HBo
 
 Di video kali ini kita akan belajar cara membuat VBA Macro di Excel untuk mengotomatiskan pencatatan KPI produksi harian dari 20 rig/sumur minyak. 
 Dengan satu klik tombol Refresh, Excel akan:
